@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*COLOR PALLETE*/
+/* #80EE98
+#46DFB1
+#09DC7
+#15919B
+#0C6478
+#213A58
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 200vh;  /* Make sure the page has extra space to scroll */
+}
+*
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Lexend', sans-serif;
+  }
+/*------------------------------------HEADER---------------------------*/
+header {
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1100px;
+    padding: 0 20px;
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    border-radius: 5px;
+  }
+  
+  /* Mobile Menu Button */
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #19b9c2;
+    cursor: pointer;
+  }
+  
+  /* Fix for nav-menu visibility */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-menu.active {
+    display: block;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 864px) {
+    nav {
+      justify-content: space-between;
+    }
+  
+    nav ul {
+      display: none; /* Hide menu initially */
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+      text-align: right;
+      padding: 10px 0;
+    }
+  
+    nav ul.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    nav ul li {
+      padding: 10px 20px;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show menu button */
+    }
+  }
+/*------------------------Social media bar----------------------*/
+.social-media-bar {
+    position: fixed;
+    top: 50%;
+    left: 10px; /* Move to the left side */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Individual Colors */
+.facebook { background-color: #1877f2; }
+.twitter { background-color: #1da1f2; }
+.instagram { background-color: #e1306c; }
+.linkedin { background-color: #0077b5; }
+
+
+/*------------------------------------HERO---------------------------*/
+/* Hero Section with Particles */
+#hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #28292b;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Particles Container */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send it behind other content */
+  }
+
+/* Hero Content */
+.hero-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column; /* Stack GIF and buttons */
+  align-items: center; /* Center align items */
+  gap: 20px; /* Space between GIF and buttons */
+}
+.hero-content img{
+  width: 800px;
+  height: auto;
+}
+/* Responsive scaling */
+@media (max-width: 1200px) {
+  .hero-content img {
+    width: 800px; /* Slightly smaller for tablets and small laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content img {
+    width: 600px; /* Medium size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content img {
+    width: 400px; /* Smaller size for mobile phones */
+  }
+}
+/* Styling the buttons */
+.buttons {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #46DFB1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #80EE98;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+/*------------------------------------aboutme---------------------------*/
+/* General section styling */
+#aboutme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 80px 10%;
+  background: #1f2020; /* Soft background color */
+  color: #333;
+}
+
+/* Left summary section */
+.aboutmesummary {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and min-width */
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px ;
+  text-align: center;
+}
+
+.aboutmesummary h2 {
+  font-size: 2.5rem;
+  color: #46DFB1;
+  margin-bottom: 20px;
+}
+
+.aboutmesummary img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  
+}
+
+.aboutmesummary p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* Right text section */
+.aboutmetext {
+  flex: 2 1 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.aboutmetext p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.aboutmetext p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutmesummary,
+  .aboutmetext {
+    width: 100%;
+  }
+}
+
+
+/*------------------------------------whyme---------------------------*/
+#whyme {
+    background-color: #f4f4f4;
+    z-index: 2;
+}
+/* Container for the Why Me grid */
+.why-me-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Individual Why Me cards */
+  .why-me-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect to make cards interactive */
+  .why-me-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .why-me-container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }
+  
+#about {
+    background-color: #f4f4f4;
+}
+/*------------------------------------SKILLS---------------------------*/
+#skills {
+    text-align: center;
+    padding: 80px 20px;
+    color: #0c0c0c;
+}
+.skills-container img,.skills-container2 img,.skills-container3 img{
+  width: 50px;
+}
+
+.skills-container,.skills-container2,.skills-container3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 25px;
+}
+
+.circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.bg {
+    stroke: #242424;
+}
+
+.progress {
+    stroke: #3498db;
+    stroke-dasharray: 314; /* Circumference of the circle */
+    stroke-dashoffset: 314; /* Initially hide the progress */
+    transition: stroke-dashoffset 1.5s ease-in-out;
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/*------------------------------------EXPERIENCE---------------------------*/
+/* Experience Section */
+.experience-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+  }
+  
+  /* Section Title */
+  .experience-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Experience Container */
+  .experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Experience Card */
+  .experience-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  /* Card Header (Visible Part) */
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Card Content (Hidden Initially) */
+  .card-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* When Active, Expand the Card */
+  .experience-card.active .card-content {
+    max-height: 200px;  /* Adjust this based on content length */
+    opacity: 1;
+    padding-top: 10px;
+  }
+  
+  /* Hover Effect */
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Mobile Optimization */
+  @media (max-width: 600px) {
+    .experience-container {
+      grid-template-columns: 1fr; /* Stack cards on mobile */
+    }
+  }
+/*------------------------------------CONTACT---------------------------*/
+#contact {
+    background-color: #d0d0d0;
+}

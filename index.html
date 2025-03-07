@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<header>
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#whyme">Why Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</header>
+<body>
+    <!---SOCIAL MEDIA BAR-->
+    <div class="social-media-bar">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+    
+    <!-- Hero Section with Particles -->
+    <div id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <img src="./images/test.gif" alt="Logo Animation">
+              <div class="buttons">
+                 <a href="#contact" class="btn">Get in Touch</a>
+                 <a href="#download" class="btn">Download</a>
+              </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="aboutme">
+        <div class="aboutmesummary">
+            <h2>About Me</h2>
+            <img src="images/Ken Mertens 2.jpg" alt="Ken Mertens 2">
+            <p><strong>Name:</strong> Ken </p>
+            <p><strong>Surname:</strong> Mertens</p>
+            <p><strong>Age</strong> 34, 05/03/1991</p>
+            <p><strong>Location</strong> Haaltert, Belgium</p>
+            <p><strong>Nationality</strong> Belgian</p>
+        </div>
+
+        <div class ="aboutmetext">
+           <p>Fueled by innovation and driven by impact, I thrive at the intersection of technology, creativity, and entrepreneurship. From a young age, I’ve been fascinated by how technology shapes the world, sparking my passion for building solutions that don’t just work—but make a difference.</p>
+
+            <p>As an entrepreneur at heart, I see challenges as opportunities, always looking for creative and efficient ways to solve problems. Whether it’s developing cutting-edge digital products, optimizing workflows, or bringing ambitious ideas to life, I approach every project with a strategic mindset and relentless drive.</p>
+            
+            <p>I believe that success isn’t just about having the right skills—it’s about vision, adaptability, and execution. That’s why I constantly push boundaries, learning new technologies, and refining my approach to deliver high-impact solutions. Let’s build something great together.</p>
+        </div>
+    </div>
+
+    </section>
+    <section id="whyme">
+        <h2>Why Me</h2>
+        <div class="why-me-container">
+            <div class="why-me-card">
+              <h3>Creative</h3>
+              <p>A highly creative and innovative individual with a strong passion for generating original ideas and solutions. Skilled in thinking outside the box, adapting to new challenges, and bringing unique perspectives to projects. Adept at turning concepts into impactful results, with a keen eye for detail and design.</p>
+            </div>
+            <div class="why-me-card">
+              <h3>Ambitious</h3>
+              <p>An ambitious and driven individual with a strong desire to achieve excellence in every endeavor. Focused on setting and surpassing goals, continuously seeking growth opportunities, and embracing challenges with determination. Passionate about making a meaningful impact and advancing both personal and professional development</p>
+            </div>
+            <div class="why-me-card">
+              <h3>Entrepreneurial</h3>
+              <p>An entrepreneurial-minded individual with a passion for innovation, strategic thinking, and problem-solving. Skilled at identifying opportunities, taking initiative, and driving projects from concept to execution. Adaptable and resourceful, with a strong focus on creating value and achieving impactful results.</p>
+            </div>
+            <div class="why-me-card">
+              <h3>Innovative</h3>
+              <p>An innovative and forward-thinking individual with a talent for developing creative solutions and introducing fresh ideas. Skilled at challenging the status quo, embracing new technologies, and driving continuous improvement. Passionate about turning concepts into impactful outcomes and fostering a culture of innovation.</p>
+            </div>
+            <div class="why-me-card">
+              <h3>Collaborative</h3>
+              <p>A collaborative and team-oriented individual with strong communication skills and a passion for building positive relationships. Skilled at working seamlessly with others, sharing ideas, and fostering an inclusive environment to achieve common goals. Committed to collective success and continuous learning through teamwork.</p>
+            </div>
+            <div class="why-me-card">
+              <h3>Passionate</h3>
+              <p>A passionate and motivated individual driven by a deep enthusiasm for continuous growth and excellence. Dedicated to pursuing goals with energy and commitment, while inspiring others through a positive mindset. Always eager to learn, create, and make a meaningful impact.</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Skills Section -->
+    
+    <section id="skills">
+        <h1>My Skills</h1>
+            <div class="softwareskill">
+            <h2>Syntax</h2>
+            </div>
+            <div class="skills-container">
+                <div class="circle" data-percent="70">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>HTML</p>
+                    <img src="images/HTML.png" alt="html">
+                </div>
+            
+                <div class="circle" data-percent="70">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>CSS</p>
+                    <img src="images/CSS.png" alt="CSS">
+                </div>
+
+                <div class="circle" data-percent="70">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>JavaScript</p>
+                    <img src="images/Javascript.png" alt="Javascript">
+                </div>
+                <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>SQL</p>
+                    <img src="images/SQL.png" alt="SQL">
+                </div>
+            </div>
+                <div class="softwareskill">
+                    <h2>Languages</h2>
+                    </div>
+                    <div class="skills-container2">
+                <div class="circle" data-percent="100">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Dutch</p>
+                </div>
+                <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>French</p>
+                </div>
+                <div class="circle" data-percent="90">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>English</p>
+                </div>
+                <div class="circle" data-percent="50">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>German</p>
+                </div>
+            </div>
+            <div class="softwareskill">
+                <h2>software</h2>
+             </div>
+                <div class="skills-container3">
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Adobe Ps</p>
+                    <img src="images/photoshop.png" alt="PS">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Adobe Ai</p>
+                    <img src="images/Ai.png" alt="Ai">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Adobe Xd</p>
+                    <img src="images/Xd.png" alt="Xd">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Adobe Pr</p>
+                    <img src="images/Pr.png" alt="html">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Adobe Ae</p>
+                    <img src="images/Ae.png" alt="Ae">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Binance</p>
+                    <img src="images/Binance.png" alt="Binance">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>VSC</p>
+                    <img src="images/VSC.png" alt="VSC">
+                 </div>
+                 <div class="circle" data-percent="80">
+                    <svg width="120" height="120">
+                        <circle cx="60" cy="60" r="50" class="bg"></circle>
+                        <circle cx="60" cy="60" r="50" class="progress"></circle>
+                    </svg>
+                    <span class="percentage">0%</span>
+                    <p>Excel</p>
+                 </div>
+    </section>
+    
+
+    <section id="Experience">
+        <div class="experience-card" onclick="toggleCard(this)">
+        <div class="card-header">
+            <h3>1st line support</h3>
+            <p>Globis | 02/2021 - 02/2024</p>
+          </div>
+          <div class="card-content">
+              <p>- Respond to tickets within the SLA and analise the priority of the ticket.</p>
+
+              <p>- Determine if the issue is client based or software based.</p>
+              
+              <p>- Report and reprostep bugs to the development team.</p>
+              
+              <p>- testing fixed bugs and eventually push those to the customers branch.</p>
+              
+              <p>- ReGEXing Code to eliminate commented code.</p>
+              
+              <p>- Pushing code to separate branch from master.</p>
+              
+              <p>- Making SSL certificates for database using OpenSSL.</p>
+          </div>
+        </div>
+  
+        <div class="experience-card" onclick="toggleCard(this)">
+          <div class="card-header">
+            <h3>Inhouse Sales</h3>
+            <p>Cuprochimique | 01/2019 - 02/2021</p>
+          </div>
+          <div class="card-content">
+            <p>Created responsive websites and optimized UI/UX for improved user engagement.</p>
+            <p>Worked with front-end frameworks like React and Vue.js.</p>
+          </div>
+        </div>
+  
+        <div class="experience-card" onclick="toggleCard(this)">
+          <div class="card-header">
+            <h3>Superuser</h3>
+            <p>Belcolade | 05/2014-01/2019</p>
+          </div>
+          <div class="card-content">
+            <p>Designed modern user-friendly interfaces using Figma and Adobe XD.</p>
+            <p>Collaborated with developers to ensure smooth implementation.</p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Here's how you can contact me.</p>
+    </section>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
