@@ -34,17 +34,17 @@ src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
 particlesJS('particles-js', {
     particles: {
         number: { value: 100, density: { enable: true, value_area: 800 } },
-        color: { value: ["#80EE98","#46DFB1"]},
+        color: { value: ["#fcea6f"]},
         shape: { type: "circle" },
-        opacity: { value: 1 },
+        opacity: { value: 1.5 },
         size: { value: 3, random: true },
-        move: { enable: true, speed: 2 },
-        line_linked: { enable: true, distance: 150, color: "#46DFB1", opacity: 0.7, width: 1 }
+        move: { enable: true, speed: 4 },
+        line_linked: { enable: true, distance: 200, color: "#fcf8de", opacity: 0.7, width: 1 }
     },
     interactivity: {
         detect_on: "canvas",
         events: {
-            onhover: { enable: true, mode: "grab" },
+            onhover: { enable: true, mode: "repulse" },
             onclick: { enable: true, mode: "push" }
         },
         modes: {
@@ -110,20 +110,21 @@ window.addEventListener("scroll", () => {
 });
 
 //----------------------------------------------------------------------
-  // EXPERIENCE SECTION
 
-  function toggleCard(card) {
-    // Toggle the 'active' class
+function toggleCard(card) {
+    // Toggle the 'active' class on the clicked card
     card.classList.toggle("active");
   
-    // Close other open cards (optional)
+    // Close other open cards
     document.querySelectorAll(".experience-card").forEach(otherCard => {
       if (otherCard !== card) {
         otherCard.classList.remove("active");
       }
     });
   }
-
+  
+  
+  
 
 
 
